@@ -1,0 +1,782 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  
+ 
+}
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+.nav-bar {
+  position: relative;
+  background: #202C45;
+}
+
+.nav-bar.nav-sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+  z-index: 999;
+}
+
+.nav-bar .navbar {
+  padding: 20px 0;
+  background: #202C45 !important;
+  transition: .3s;
+}
+
+.nav-bar.nav-sticky .navbar {
+  padding: 5px 0;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #ffffff;
+  padding: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #E81C2E;
+}
+
+.nav-bar .dropdown-menu {
+  margin-top: 0;
+  border: 0;
+  border-radius: 0;
+  background: #f8f9fa;
+}
+
+.nav-bar .btn.btn-custom {
+  color: #202C45;
+  background: #ffffff;
+  box-shadow: inset 0 0 0 0 #E81C2E;
+}
+
+.nav-bar .btn:hover {
+  color: #ffffff;
+  background: #E81C2E;
+  box-shadow: inset 200px 0 0 0 #E81C2E;
+}
+
+@media (min-width: 992px) {
+  .nav-bar .navbar-brand {
+      display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-dark .navbar-nav .nav-link,
+  .navbar-dark .navbar-nav .nav-link:focus,
+  .navbar-dark .navbar-nav .nav-link:hover,
+  .navbar-dark .navbar-nav .nav-link.active {
+      padding: 5px 0;
+  }
+  
+  .nav-bar .dropdown-menu {
+      box-shadow: none;
+  }
+  
+  .nav-bar .btn {
+      display: none;
+  }
+}
+
+ 
+form .radio{
+  border: 0px;
+  font-weight: 500;
+  height: 45px;
+  width: 100%;
+  display: block;
+ 
+  margin-bottom: 5px;
+  font-size: 16px;
+  outline: none;
+  font-size: 16px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease
+}
+.container{
+  max-width: 500px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+}
+.alum{
+  max-width: 500px;
+  background-color:lightcyan;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height:1790px;
+  margin-top: 200%;
+  margin-left:40% ;
+}
+
+.leave{
+  max-width: 500px;
+  background-color:lightcyan;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height:750px;
+  margin-top: 50%;
+  margin-left:40% ;
+}
+.userinst{
+  max-width: 500px;
+  background-color:lightcyan;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height:1040px;
+  margin-top: 90%;
+  margin-left:40% ;
+}
+.ins_reg{
+  max-width: 500px;
+  background-color:lightcyan;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height:1200px;
+  margin-top: 110%;
+  margin-left:40% ;
+}
+.vreg{
+  max-width: 500px;
+
+  background-color:lightcyan;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height:2150px;
+  margin-top: 270%;
+  margin-left:40% ;
+}
+.renew{
+  max-width: 500px;
+  background-color:lightcyan;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height:1900px;
+  margin-top: 230%;
+  margin-left:40% ;
+}
+.owner{
+  max-width: 500px;
+  background-color:lightcyan;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height:2450px;
+  margin-top:300%;
+  margin-left:40% ;
+}
+.duplicate{
+  max-width: 500px;
+  background-color:lightcyan;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height:1810px;
+  margin-top:200%;
+  margin-left:40% ;
+}
+.user_reg{
+  max-width: 500px;
+  background-color:lightcyan;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height:1250px;
+  margin-top:120%;
+  margin-left:40% ;
+}
+.off_reg{
+  max-width: 500px;
+  background-color:lightcyan;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height:1350px;
+  margin-top:140%;
+  margin-left:40% ;
+}
+.inst_reg{
+  max-width: 500px;
+  background-color:lightcyan;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height:1450px;
+  margin-top:150%;
+  margin-left:40% ;
+}
+.dup{
+  max-width: 500px;
+  background-color:lightcyan;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height:1815px;
+  margin-top:210%;
+  margin-left:40% ;
+}
+.cont{
+  max-width: 500px;
+  background-color: rgb(166, 170, 228);
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 570px;
+  margin-top: 20%;
+  margin-left:40% ;
+}
+.co{
+  max-width: 500px;
+  background-color: rgb(166, 170, 228);
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 450px;
+  margin-top: 10%;
+  margin-left:40% ;
+}
+.cozz{
+  max-width: 500px;
+  background-color: rgb(166, 170, 228); 
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 1000px;
+  margin-top: 90%;
+  margin-left:40% ;
+}
+.l_app{
+  max-width: 500px;
+  background-color: rgb(166, 170, 228); 
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 1430px;
+  margin-top: 150%;
+  margin-left:40% ;
+}
+.o_app{
+  max-width: 500px;
+  background-color: rgb(166, 170, 228); 
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 2250px;
+  margin-top: 280%;
+  margin-left:40% ;
+}
+.d_app{
+  max-width: 500px;
+  background-color: rgb(166, 170, 228); 
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 1620px;
+  margin-top: 190%;
+  margin-left:40% ;
+}
+.v_app{
+  max-width: 500px;
+  background-color: rgb(166, 170, 228); 
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 1700px;
+  margin-top: 190%;
+  margin-left:40% ;
+}
+.coz{
+  max-width: 500px;
+  background-color:white;
+  padding: 25px 30px;
+  /* border-radius: 5px; */
+  /* box-shadow: 0 5px 10px rgba(0,0,0,0.15); */
+  align-content: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 400px;
+  margin-top: 5%;
+  margin-left:40% ;
+ 
+}
+.coz .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+  
+}
+
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+}
+.cont .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+}
+.alum .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+}
+.leave .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+}
+.userinst .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+}
+.ins_reg .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+}
+.vreg .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+}
+.renew .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+}
+.owner .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+}
+.duplicate .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+}
+.user_reg .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+}
+.off_reg .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+}
+.inst_reg .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+}
+.dup .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+}
+.co .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+}
+.cozz .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+}
+.l_app .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+}
+.d_app .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+}
+.v_app .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+}
+.o_app .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+}
+.container .title::before{
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  
+}
+.cont .title::before{
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  
+}
+.alum .title::before{
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  
+}
+.leave .title::before{
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  
+}
+.userinst .title::before{
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  
+}
+.ins_reg .title::before{
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  
+}
+.vreg .title::before{
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  
+}
+.renew .title::before{
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  
+}
+.owner .title::before{
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  
+}
+.duplicate .title::before{
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  
+}
+.user_reg .title::before{
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  
+}
+.off_reg .title::before{
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  
+}
+.inst_reg .title::before{
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  
+}
+.dup .title::before{
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  
+}
+.co .title::before{
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  
+}
+.cozz .title::before{
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  
+}
+.l_app .title::before{
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  
+}
+.d_app .title::before{
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  
+}
+.v_app .title::before{
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  
+}
+.o_app .title::before{
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 30px;
+  border-radius: 5px;
+  
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 50px;
+  width: 425px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  
+}
+ form .gender-details .gender-title{
+  font-size: 20px;
+  font-weight: 500;
+ }
+ form .category{
+   display: flex;
+   width: 70%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .category label .dot{
+  height: 10px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ 
+ 
+ 
+ 
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .con form .user-details{
+    max-height: 100px;
+    overflow-y: scroll;
+  }
+  .content form .user-details{
+    max-height: 100px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+}
